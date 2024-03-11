@@ -4,7 +4,7 @@
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Ime i prezime | fmarkic22@foi.hr | 0016157981 | filipmarkic
 
 
 ## Opis domene
