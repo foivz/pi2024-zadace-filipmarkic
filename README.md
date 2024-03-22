@@ -159,21 +159,71 @@ Izvor/porijeklo|xxx
 
 Identifikator|FZ-11
 -------------|----
-Zahtjev|
-Obrazloženje|
-Način provjere|
-Prioritet[1-5]|2
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
 Izvor/porijeklo|xxx
 
-### Dinamika realizacije zahtjeva ///petak
-
+### Dinamika realizacije zahtjeva
+FZ-1 - Ovaj zahtjev ima visoki prioritet i planira se realizirati u prvoj fazi razvoja softvera. Potrebno je osigurati funkcionalnost registracije korisnika i upravljanja korisničkim računima kako bi korisnici mogli pristupiti aplikaciji.
+FZ-2 - Ovaj zahtjev također ima visoki prioritet i planira se implementirati odmah nakon funkcionalnosti korisničkog računa. Treba osigurati mogućnost kupovine karata unutar aplikacije kako bi korisnici mogli jednostavno i brzo nabaviti potrebne karte.
+FZ-3 - Realizacija ovog zahtjeva planira se u istoj fazi kao i prethodna dva, jer je bitno osigurati korisnicima pristup informacijama o autobusnim stanicama kako bi lakše planirali svoje putovanje.
+FZ-4 - Implementacija ove funkcionalnosti također je prioritetna i planira se u istoj fazi kao i prethodni zahtjevi kako bi korisnici mogli pratiti stvarnu lokaciju autobusa u stvarnom vremenu.
+FZ-5 - Ovaj zahtjev ima visoki prioritet i planira se implementirati u istoj fazi kao i prethodni zahtjevi, jer je važno korisnicima pružiti informacije o mogućim kašnjenjima radi pravovremenog planiranja putovanja.
+FZ-6 - Planira se implementirati nakon prvih pet zahtjeva, jer je važno osigurati funkcionalnost upravljanja tarifnim zonama kako bi se prilagodila ponuda karata potrebama korisnika.
+FZ-7 - Implementacija ove funkcionalnosti planira se nakon prvih šest zahtjeva, jer je potrebno omogućiti administratorima upravljanje korisničkim računima nakon što su korisnici već registrirani i aplikacija je funkcionalna.
+FZ-8 - Ovaj zahtjev planira se implementirati nakon što su osnovne funkcionalnosti aplikacije dostupne, kako bi se omogućilo generiranje izvještaja o kašnjenjima i analiza performansi sustava.
+FZ-9 - Implementacija ove funkcionalnosti planira se nakon implementacije osnovnih funkcionalnosti aplikacije, kako bi se omogućila generiranje izvještaja o putničkim statistikama za analizu korištenja javnog prijevoza.
+FZ-10 - Ovaj zahtjev planira se implementirati nakon što su osnovne funkcionalnosti aplikacije dostupne, kako bi se omogućio prikaz prosječnog broja putnika po autobusnoj liniji za analizu opterećenosti linija.
+FZ-11 - Implementacija ove funkcionalnosti planira se nakon što su osnovne funkcionalnosti aplikacije dostupne, kako bi se omogućio prikaz udjela različitih kategorija karata radi boljeg razumijevanja potražnje korisnika.
 
 ## Nefunkcionalni zahtjevi ///petak
 ### Izgled softvera ///petak
+Identifikator|FZ-11
+-------------|----
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
 ### Upotrebljivost softvera ///petak
+Identifikator|FZ-11
+-------------|----
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
 ### Perfomanse softvera ///petak
+Identifikator|FZ-11
+-------------|----
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
 ### Izvođenje softvera i okruženje ///petak 
+Identifikator|FZ-11
+-------------|----
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
 ### Sigurnost i privatnost ///petak
+Identifikator|FZ-11
+-------------|----
+Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
+Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
+Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
 ### Ostalo ///petak 
 ## Skice zaslona ///petak 
 ***
