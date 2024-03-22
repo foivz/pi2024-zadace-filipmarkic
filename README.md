@@ -24,7 +24,7 @@ Svi resursi nalaze se u mapi _Documentation_.
 Svrha Software Requirements Specification (SRS) dokumenta je da precizno opiše funkcionalne i nefunkcionalne zahtjeve za softversko rješenje "AutobusniPuls", koje će digitalizirati poslovanje Gradskih autobusa Varaždin. Ovaj dokument namijenjen je čitateljima uključenima u proces razvoja, implementacije i održavanja aplikacije, uključujući programere, dizajnere, testere, menadžere projekta i klijente. Također, SRS dokument trebaju razumjeti i korisnici aplikacije, kao što su administrativni korisnici, dispečeri, osoblje korisničke podrške i putnici koji će koristiti aplikaciju za planiranje putovanja i pristup informacijama o javnom prijevozu. Glavni cilj SRS dokumenta je osigurati jasno definiranje zahtjeva kako bi se osigurala usklađenost između očekivanja korisnika i funkcionalnosti softverskog rješenja "AutobusniPuls", te olakšati proces razvoja, testiranja i implementacije aplikacije.
 
  ### Opseg 
-Naziv softvera koji se čini prikladnim za ovaj projekt je "AutobusniPuls". "AutobusniPuls" će biti potpuno novo softversko rješenje za digitalizaciju poslovanja Gradskih autobusa Varaždin. Projekt obuhvaća širok spektar aktivnosti s ciljem unapređenja kvalitete usluge prijevoza putnika u gradu i prigradskim područjima. Ovaj softver će omogućiti precizno definiranje vozila i autobusnih stanica, praćenje lokacija autobusa u stvarnom vremenu te generiranje strukturiranih izvještaja o voznom parku, stanicama, linijama i voznom redu. Također, "AutobusniPuls" će pružati jasan prikaz autobusnih linija, voznog reda i procijenjenog vremena dolaska na autobusnim stanicama, kao i informacije putnicima o rutama, presjedanjima i procijenjenom vremenu putovanja do odredišta. Uvođenjem elektroničke prodaje karata putem kioska na autobusnim stanicama te automatiziranim očitavanjem karata pri ulasku u autobus, ovaj softver će ubrzati proces ukrcavanja putnika i omogućiti praćenje broja putnika u stvarnom vremenu. Međutim, važno je napomenuti da se "AutobusniPuls" neće baviti administrativnim ili financijskim poslovima tvrtke. Također, nije dio svrhe ovog softvera da se bavi radom vozača ili operatera autobusa, već će se fokusirati isključivo na digitalizaciju i optimizaciju operativnih procesa vezanih uz praćenje vozila, pružanje informacija putnicima i upravljanje poslovnim podacima relevantnim za javni prijevoz.
+Naziv softvera koji se čini prikladnim za ovaj projekt je "AutobusniPuls". "AutobusniPuls" će biti potpuno novo softversko rješenje za digitalizaciju poslovanja Gradskih autobusa Varaždin. Projekt obuhvaća širok spektar aktivnosti s ciljem unapređenja kvalitete usluge prijevoza putnika u gradu i prigradskim područjima. Ovaj softver će omogućiti precizno definiranje vozila i autobusnih stanica, praćenje lokacija autobusa u stvarnom vremenu te generiranje strukturiranih izvještaja o voznom parku, stanicama, linijama i voznom redu. Također, "AutobusniPuls" će pružati jasan prikaz autobusnih linija, voznog reda i procijenjenog vremena dolaska na autobusnim stanicama, kao i informacije putnicima o rutama, presjedanjima i procijenjenom vremenu putovanja do odredišta. Uvođenjem elektroničke prodaje karata putem mobilne verzije aplikacije i kioska na autobusnim stanicama te automatiziranim očitavanjem karata pri ulasku u autobus, ovaj softver će ubrzati proces ukrcavanja putnika i omogućiti praćenje broja putnika u stvarnom vremenu. Međutim, važno je napomenuti da se "AutobusniPuls" neće baviti administrativnim ili financijskim poslovima tvrtke. Također, nije dio svrhe ovog softvera da se bavi radom vozača ili operatera autobusa, već će se fokusirati isključivo na digitalizaciju i optimizaciju operativnih procesa vezanih uz praćenje vozila, pružanje informacija putnicima i upravljanje poslovnim podacima relevantnim za javni prijevoz.
 
  ### Definicije, akronimi i skraćenice ///
 SRS - Software Requirements Specification, dokument koji definira funkcionalne i nefunkcionalne zahtjeve softverskog sustava. <br/>
@@ -38,7 +38,9 @@ IoT - Internet of Things, koncept koji se odnosi na povezivanje fizičkih uređa
 GUI - Graphical User Interface, grafičko korisničko sučelje koje omogućuje interakciju putem grafičkih elemenata kao što su ikone, gumbi i prozori.<br/>
 
  ### Reference ///
-
+1. "830-1998" - IEEE Recommended Practice for Software Requirements Specifications
+2. Dokument opisa problemske domene
+3. "Software Engineering (9th Edition) 9th edition (authors) Sommerville, Ian (2010) published by Addison Wesley"
  
 ### Struktura dokumenta 
 Ostatak dokumenta daje pregled ključnih značajki proizvoda, korisničkih specifikacija i ograničenja. Dodatno, uključuje funkcionalne i nefunkcionalne zahtjeve kao i skice zaslona. Funkcionalni zahtjevi usmjereni su na značajke i ograničenja sustava, a svakom zahtjevu dodijeljen je jedinstveni identifikator. Za razliku od funkcionalnih zahtjeva, nefunkcionalni zahtjevi odnose se na izgled, performanse, vrijeme izvođenja i okruženje softvera, kao i na sigurnost i privatnost. Skice zaslona na kraju dokumenta pružaju vizualni prikaz funkcionalnosti između korisnika i softverskog rješenja. Skice zaslona izrađene su u wireframe-u. Cilj im je pružiti vizualni prikaz kako bi naš sustav trebao izgledati i opisati kako bi naša aplikacija trebala raditi.
@@ -178,54 +180,27 @@ FZ-9 - Implementacija ove funkcionalnosti planira se nakon implementacije osnovn
 FZ-10 - Ovaj zahtjev planira se implementirati nakon što su osnovne funkcionalnosti aplikacije dostupne, kako bi se omogućio prikaz prosječnog broja putnika po autobusnoj liniji za analizu opterećenosti linija.<br/>
 FZ-11 - Implementacija ove funkcionalnosti planira se nakon što su osnovne funkcionalnosti aplikacije dostupne, kako bi se omogućio prikaz udjela različitih kategorija karata radi boljeg razumijevanja potražnje korisnika.<br/>
 
-## Nefunkcionalni zahtjevi ///petak
-### Izgled softvera ///petak
-Identifikator|FZ-11
--------------|----
-Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
-Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
-Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
-Prioritet[1-5]|3
-Izvor/porijeklo|xxx
+## Nefunkcionalni zahtjevi 
+### Izgled softvera 
+NFZ-1 - softver treba omogućiti korisnicima mogućnost prilagodbe veličine i stila fontova kako bi se zadovoljile individualne preferencije korisnika
+NFZ-2 - sučelje treba imati minimalistički dizajn s naglaskom na jasnoću i jednostavnost kako bi se smanjila distrakcija i poboljšala upotrebljivost
 
-### Upotrebljivost softvera ///petak
-Identifikator|FZ-11
--------------|----
-Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
-Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
-Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
-Prioritet[1-5]|3
-Izvor/porijeklo|xxx
+### Upotrebljivost softvera 
+NFZ-3 - softver treba imati jasnu organizaciju funkcionalnosti i navigaciju kako bi se olakšalo pamćenje opcija i akcija korisnicima
 
-### Perfomanse softvera ///petak
-Identifikator|FZ-11
--------------|----
-Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
-Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
-Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
-Prioritet[1-5]|3
-Izvor/porijeklo|xxx
+### Perfomanse softvera 
+NFZ-4 - softver treba imati brz odziv na korisničke zahtjeve, pružajući rezultate ili akcije unutar prihvatljivog vremenskog okvira kako bi se osiguralo ugodno korisničko iskustvo
 
-### Izvođenje softvera i okruženje ///petak 
-Identifikator|FZ-11
--------------|----
-Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
-Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
-Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
-Prioritet[1-5]|3
-Izvor/porijeklo|xxx
+### Izvođenje softvera i okruženje 
+NFZ-5 - softver treba biti optimiziran za izvođenje na različitim vrstama uređaja, uključujući stolna računala, prijenosna računala, tablete i pametne telefone
 
-### Sigurnost i privatnost ///petak
-Identifikator|FZ-11
--------------|----
-Zahtjev|Aplikacija će prikazivati udjele različitih kategorija karata 
-Obrazloženje|Prikaz udjela različitih kategorija karata omogućuje analizu potražnje za različitim vrstama karata, što pomaže u planiranju ponude i prilagođavanju usluga potrebama korisnika
-Način provjere|Funkcionalnost prikaza udjela različitih kategorija karata bit će testirana provjerom sustava da točno izračuna udjele svake kategorije karata u ukupnom prometu
-Prioritet[1-5]|3
-Izvor/porijeklo|xxx
+### Sigurnost i privatnost 
+NFZ-6 - softver treba imati sustav pristupne kontrole koji omogućuje upravljanje pravima pristupa korisnika na različite dijelove sustava i podataka
 
-### Ostalo ///petak 
-## Skice zaslona ///petak 
+### Ostalo 
+Nema identificiranih dodatnih nefunkcionalnih zahtjeva
+
+## Skice zaslona ///subota
 ***
 
 
