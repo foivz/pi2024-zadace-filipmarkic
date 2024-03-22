@@ -82,8 +82,8 @@ Naš sustav bi trebao voditi evidenciju trenutnih putnika u autobusu. Svaki puta
 Identifikator|FZ-1
 -------------|----
 Zahtjev|Korisnici će imati pravo stvoriti korisnički račun unutar aplikacije
-Obrazloženje|Omogućavanje korisničko računa unutar aplikacije osigurava personalizirano iskustvo korisnika i olakšava upravljanje njihovim podacima i postavkama
-Način provjere|Funkcionalnost stvaranja korisničkog računa bit će testirana provjerom mogućnosti korisnika da uspješno stvore računa te pristupe svojim podacima
+Obrazloženje|Omogućavanje korisničkog računa unutar aplikacije osigurava personalizirano iskustvo korisnika i olakšava upravljanje njihovim podacima i postavkama
+Način provjere|Funkcionalnost stvaranja korisničkog računa bit će testirana provjerom mogućnosti korisnika da uspješno stvore račun te pristupe svojim podacima
 Prioritet[1-5]|1
 Izvor/porijeklo|Dokument "Korisnički zahtjevi - Gradski prijevoz", 2.1 Strukturiranje specifikacija zahtjeva.pdf
 
