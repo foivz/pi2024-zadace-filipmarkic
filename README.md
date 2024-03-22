@@ -79,50 +79,90 @@ Naš sustav bi trebao voditi evidenciju trenutnih putnika u autobusu. Svaki puta
 
 Identifikator|FZ-1
 -------------|----
-Zahtjev|Korisnici će imati pravo kreirati svoj račun te odabrati svoj status (umirovljenik, student...)
-Obrazloženje|Ovisno je li korisnički račun od putnika ili zaposlenika, korisnik će imati različite funkcije
-Način provjere|Zaposlenici će imati drugačije sučelje sa drugačijim funkcijama od putnika i njihovih računa
+Zahtjev|Korisnici će imati pravo stvoriti korisnički račun unutar aplikacije
+Obrazloženje|Omogućavanje korisničko računa unutar aplikacije osigurava personalizirano iskustvo korisnika i olakšava upravljanje njihovim podacima i postavkama
+Način provjere|Funkcionalnost stvaranja korisničkog računa bit će testirana provjerom mogućnosti korisnika da uspješno stvore računa te pristupe svojim podacima
 Prioritet[1-5]|1
-Izvor/porijeklo|Direktor društva Autobusni prijevoz
+Izvor/porijeklo|
 
 Identifikator|FZ-2
 -------------|----
-Zahtjev|Pregled/definiranje voznih linija, stanica ovisno o korisničkom računu
-Obrazloženje|Zaposlenici će moći definirati/ažurirati vozne linije i stanice dok će putnici moći pregledati ih
-Način provjere|Zaposlenik će imati opciju edit dok će putnik imati opciju sort i filter
+Zahtjev|Korisnici će moći izvršiti kupnju karata unutar aplikacije
+Obrazloženje|Omogućavanje kupnje karata unutar aplikacije pruža korisnicima praktičan način rezervacije i osigurava glatko iskustvo korištenja usluge javnog prijevoza
+Način provjere|Provjera će se obaviti kroz simulaciju procesa kupnje karata unutar aplikacije kako bi se osiguralo ispravno funkcioniranje sustava
 Prioritet[1-5]|1
 Izvor/porijeklo|Direktor društva Autobusni prijevoz
 
 Identifikator|FZ-3
 -------------|----
-Zahtjev|Pregled/definiranje rasporeda
-Obrazloženje|Zaposlenici može dodavati rasporede buseva (polazak, dolazak, stajanja...) dok će putnici samo pregledavati te rasporede
-Način provjere|Zaposlenici će imati opciju edit, dok će putnik imati opciju sort i filter
-Prioritet[1-5]|1
+Zahtjev|Korisnicima je omogućen pregled detalja o autobusnim stanicama poput lokacije na karti, naziva stanice i pripadajućih autobusnih linija
+Obrazloženje|Omogućavanje pregleda detalja o autobusnim stanicama korisnicima olakšava planiranje ruta putovanja i pruža im važne informacije o dostupnim linijama i lokacijama stanica
+Način provjere|Funkcionalnost pregleda detalja o autobusnim stanicama bit će testirana kroz provjeru korisničkog sučelja aplikacije, osiguravajući da korisnici mogu lako pristupiti potrebnim informacijama
+Prioritet[1-5]|3
 Izvor/porijeklo|Direktor društva Autobusni prijevoz
 
 Identifikator|FZ-4
 -------------|----
-Zahtjev|Strukturiran ispis
-Obrazloženje|Zaposlenici imaju opciju ispisati sve prikupljene podatke za pojedina stajališta, linije i sl.
-Način provjere|Zaposlenik će birati opciju ispis te će odabrati podatke koje žele da se ispišu
-Prioritet[1-5]|2
+Zahtjev|Korisnicima će biti omogućen pregled trenutne lokacije autobusa u stvarnom vremenu na karti
+Obrazloženje|Omogućavanje pregleda trenutne lokacije autobusa korisnicima olakšava praćenje dolaska autobusa na određenu stanicu i planiranje putovanja
+Način provjere|Funkcionalnost pregleda lokacije autobusa bit će testirana kroz simulaciju stvarnih situacija praćenja autobusa, kako bi se osigurala točnost prikaza lokacije
+Prioritet[1-5]|4
 Izvor/porijeklo|Uprava Autobusnog prijevoza
 
 Identifikator|FZ-5
 -------------|----
-Zahtjev|xxx
-Obrazloženje|xxx
-Način provjere|xxx
-Prioritet[1-5]|xxx
+Zahtjev|Sustav će automatski slati korisnicima obavijesti o kašnjenju autobusa
+Obrazloženje|Automatsko slanje obavijesti o kašnjenju autobusa korisnicima pruža praktičan način obavještavanja, olakšavajući im planiranje putovanja bez potrebe za aktivnim ulaskom u aplikaciju
+Način provjere|Funkcionalnost automatskog slanja obavijesti bit će testirana kroz simulaciju različitih scenarija kašnjenja, provjeravajući pouzdanost i pravovremenost dostave obavijesti
+Prioritet[1-5]|5
 Izvor/porijeklo|xxx
 
 Identifikator|FZ-6
 -------------|----
-Zahtjev|xxx
-Obrazloženje|xxx
-Način provjere|xxx
-Prioritet[1-5]|xxx
+Zahtjev|Administratorima će biti omogućeno definiranje novih tarifnih zona, uključujući unos informacija o cijenama karata, posebnim popustima ili tarifama
+Obrazloženje|Omogućavanje administratorima da definiraju nove tarifne zone olakšava prilagodbu cijena karata i upravljanje posebnim tarifama, što doprinosi fleksibilnosti i pravednosti sustava naplate
+Način provjere|Definiranje novih tarifnih zona zona bit će testirana provjerom mogućnosti administatora da uspješno unesu i ažuriraju informacije o tarifama
+Prioritet[1-5]|2
+Izvor/porijeklo|xxx
+
+Identifikator|FZ-7
+-------------|----
+Zahtjev|Administratorima će biti omogućeno upravljanje korisničkim računima, što uključuje dodavanje novih korisničkih računa za zaposlenike ili druge ovlaštene osobe s pristupom sustavu
+Obrazloženje|Omogućavanje administratorima da upravljaju korisničkim računima olakšava kontrolu pristupa sustavu i osigurava sigurnost te učinkovito upravljanje korisnicima
+Način provjere|Funkcionalnost upravljanja korisničkim računima bit će testirana provjerom mogućnosti administratora da uspješno dodaju, uređuju i brišu korisničke račune
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
+Identifikator|FZ-8
+-------------|----
+Zahtjev|Aplikacija će omogućiti generiranje izvještaja o kašnjenjima autobusa, pružajući informacije o trajanju kašnjenja i njihovim uzrocima
+Obrazloženje|Omogućavanje generiranja izvještaja o kašnjenjima autobusa pruža uvid u performanse sustava javnog prijevoza, olakšavajući identifikaciju problema i donošenje odluka za poboljšanje
+Način provjere|Funkcionalnost generiranja izvještaja o kašnjenjima autobusa bit će testirana provjerom mogućnosti sustava da automatski generira detaljne izvještaje na zahtjev korisnika
+Prioritet[1-5]|4
+Izvor/porijeklo|xxx
+
+Identifikator|FZ-9
+-------------|----
+Zahtjev|Aplikacija će omogućiti generiranje izvještaja o putničkim statistikama za određeni vremenski period, uključujući informacije o broju putnika po liniji, najfrekventnijim stanicama i prosječnoj popunjenosti autobusa
+Obrazloženje|Generiranje izvještaja o putničkim statistikama omogućuje analizu korištenja javnog prijevoza, pružajući relevantne podatke za planiranje i poboljšanje usluga
+Način provjere|Funkcionalnost generiranja izvještaja o putničkim statistikama bit će testirana provjerom mogućnosti sustava da automatski generira detaljne izvještaje za željeni vremenski period
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
+Identifikator|FZ-10
+-------------|----
+Zahtjev|Aplikacija će prikazivati prosječan broj putnika koji koriste svaku autobusnu liniju tijekom određenog vremenskog razdoblja
+Obrazloženje|Prikaz prosječnog broja putnika po autobusnoj liniji omogućuje analizu opterećenosti pojedinih linija i prilagođavanje kapaciteta prema potrebama korisnika
+Način provjere|Funkcionalnost prikaza prosječnog broja putnika po autobusnoj liniji bit će testirana provjerom mogućnosti sustava da točno izračuna prosječan broj putnika za svaku liniju u željenom vremenskom razdoblju
+Prioritet[1-5]|3
+Izvor/porijeklo|xxx
+
+Identifikator|FZ-11
+-------------|----
+Zahtjev|
+Obrazloženje|
+Način provjere|
+Prioritet[1-5]|2
 Izvor/porijeklo|xxx
 
 ### Dinamika realizacije zahtjeva ///petak
