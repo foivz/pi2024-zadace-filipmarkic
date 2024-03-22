@@ -49,21 +49,21 @@ Program “AutobusniPuls” inovativno je rješenje koje će transformirati rad 
 
 ### Funkcija proizvoda 
 Glavne funkcije sustava „AutobusniPuls“ koje bi htjeli integrirati su sljedeće:
-1. Planiranje ruta: Omogućuje korisnicima planiranje optimalnih ruta putovanja, uključujući prikaz različitih mogućnosti putovanja i procijenjeno vrijeme dolaska.
-2. Praćenje lokacija autobusa u stvarnom vremenu: Pruža mogućnost praćenja lokacije autobusa u realnom vremenu radi točnog informiranja putnika i optimizacije rasporeda vožnje.
-3. Generiranje izvještaja: Omogućuje generiranje strukturiranih izvještaja o voznom parku, stanicama, linijama i voznom redu radi olakšanog vođenja evidencije i donošenja poslovnih odluka.
-4. Prikaz informacija na autobusnim stanicama: Pruža jasan prikaz autobusnih linija, voznog reda i procijenjenog vremena dolaska autobusa na svakoj stanici radi informiranja putnika.
-5. Informacije za putnike: Pruža putnicima informacije o rutama, presjedanjima, procijenjenom vremenu putovanja do odredišta i sl., kako bi im olakšalo planiranje putovanja.
-6. Elektronička prodaja karata: Omogućuje putnicima elektroničku kupnju karata putem kioska na autobusnim stanicama radi ubrzanja procesa ukrcavanja.
-7. Automatizirano očitavanje karata: Osigurava automatizirano očitavanje karata putem čitača pri ulasku u autobus radi praćenja broja putnika u stvarnom vremenu.
-8. Sustav za podršku korisnicima: Pruža podršku korisnicima putem različitih kanala komunikacije poput telefona, e-pošte ili online chat-a radi rješavanja pitanja, pružanja informacija i rješavanja problema.
-9. Sigurnosne značajke: Uključuje sigurnosne značajke poput autentikacije korisnika, šifriranja podataka i zaštite od neovlaštenog pristupa radi osiguranja sigurnosti sustava i podataka korisnika.
+1. Planiranje ruta - omogućuje korisnicima planiranje optimalnih ruta putovanja, uključujući prikaz različitih mogućnosti putovanja i procijenjeno vrijeme dolaska.
+2. Praćenje lokacija autobusa u stvarnom vremenu - pruža mogućnost praćenja lokacije autobusa u realnom vremenu radi točnog informiranja putnika i optimizacije rasporeda vožnje.
+3. Generiranje izvještaja - omogućuje generiranje strukturiranih izvještaja o voznom parku, stanicama, linijama i voznom redu radi olakšanog vođenja evidencije i donošenja poslovnih odluka.
+4. Prikaz informacija na autobusnim stanicama - pruža jasan prikaz autobusnih linija, voznog reda i procijenjenog vremena dolaska autobusa na svakoj stanici radi informiranja putnika.
+5. Informacije za putnike - pruža putnicima informacije o rutama, presjedanjima, procijenjenom vremenu putovanja do odredišta i sl., kako bi im olakšalo planiranje putovanja.
+6. Elektronička prodaja karata - omogućuje putnicima elektroničku kupnju karata putem kioska na autobusnim stanicama radi ubrzanja procesa ukrcavanja.
+7. Automatizirano očitavanje karata - osigurava automatizirano očitavanje karata putem čitača pri ulasku u autobus radi praćenja broja putnika u stvarnom vremenu.
+8. Sustav za podršku korisnicima - pruža podršku korisnicima putem različitih kanala komunikacije poput telefona, e-pošte ili online chat-a radi rješavanja pitanja, pružanja informacija i rješavanja problema.
+9. Sigurnosne značajke - uključuje sigurnosne značajke poput autentikacije korisnika, šifriranja podataka i zaštite od neovlaštenog pristupa radi osiguranja sigurnosti sustava i podataka korisnika.
 
 ### Karakteristike korisnika 
 Karakteristike korisnika aplikacije “AutobusniPuls” razlikuju se ovisno o njihovoj ulozi i potrebama. Administrativni korisnici poput voditelja i dispečera Gradskih autobusa Varaždin trebaju pristup naprednim funkcijama sustava kako bi učinkovito upravljali poslovanjem i osigurali visokokvalitetne usluge prijevoza. Korisnici službe za korisnike trebaju alate za komunikaciju s putnicima i rješavanje njihovih pitanja. Putnici su glavni korisnici aplikacije i koriste intuitivno sučelje kako bi im olakšali planiranje putovanja, pregled voznih redova, kupnju karata i primanje obavijesti o promjenama usluge. Različite dobne skupine i tehničko znanje mogu utjecati na preferencije korištenja aplikacije. Stoga je važno osigurati responzivno i dostupno sučelje svim korisnicima. Umirovljenici ili osobe s posebnim potrebama mogu imati posebne zahtjeve u pogledu pristupačnosti, dok mlađi korisnici mogu preferirati značajke kao što su integracija s društvenim mrežama ili personalizirani sadržaj.
 
 ### Ograničenja 
-Zahtjev pouzdanosti - Softversko rješenje mora biti stabilno i mora izdržat velik broj korisnika u vremenu
+Zahtjev pouzdanosti - softversko rješenje mora biti stabilno i mora izdržat velik broj korisnika u vremenu
 Mobilna podrška – sustav mora sadržavati mobilnu podršku kako naši korisnici mogu „na putu“ provjeriti raspored autobusnih linija
 Sigurnost podataka – pošto se kupnja karata odvija online (bar dio), sustav mora bit siguran kako ne bi došlo do krađe bankovnih podataka ili identiteta
 Prilagodljivost promjenama u infrastrukturi / prometu – ukoliko dođe do promjene u stajalištima ili rasporedu, mora bit sposoban brzim promjenama bez velikih poteškoća, mora bit prilagodljiv
