@@ -26,7 +26,7 @@ Svrha SRS dokumenta je da precizno opiše funkcionalne i nefunkcionalne zahtjeve
  ### Opseg 
 Naziv softvera koji se čini prikladnim za ovaj projekt je "AutobusniPuls". "AutobusniPuls" će biti potpuno novo softversko rješenje za digitalizaciju poslovanja Gradskih autobusa Varaždin. Projekt obuhvaća širok spektar aktivnosti s ciljem unapređenja kvalitete usluge prijevoza putnika u gradu i prigradskim područjima. Ovaj softver će omogućiti precizno definiranje vozila i autobusnih stanica, praćenje lokacija autobusa u stvarnom vremenu te generiranje strukturiranih izvještaja o voznom parku, stanicama, linijama i voznom redu. Također, "AutobusniPuls" će pružati jasan prikaz autobusnih linija, voznog reda i procijenjenog vremena dolaska na autobusnim stanicama, kao i informacije putnicima o rutama, presjedanjima i procijenjenom vremenu putovanja do odredišta. Uvođenjem elektroničke prodaje karata putem mobilne verzije aplikacije i kioska na autobusnim stanicama te automatiziranim očitavanjem karata pri ulasku u autobus, ovaj softver će ubrzati proces ukrcavanja putnika i omogućiti praćenje broja putnika u stvarnom vremenu. Međutim, važno je napomenuti da se "AutobusniPuls" neće baviti administrativnim ili financijskim poslovima tvrtke. Također, nije dio svrhe ovog softvera da se bavi radom vozača ili operatera autobusa, već će se fokusirati isključivo na digitalizaciju i optimizaciju operativnih procesa vezanih uz praćenje vozila, pružanje informacija putnicima i upravljanje poslovnim podacima relevantnim za javni prijevoz.
 
- ### Definicije, akronimi i skraćenice ///
+ ### Definicije, akronimi i skraćenice 
 SRS - Software Requirements Specification, dokument koji definira funkcionalne i nefunkcionalne zahtjeve softverskog sustava. <br/>
 GPS - Global Positioning System, sustav za određivanje geografske lokacije koristeći satelite.<br/>
 UI - User Interface, sučelje koje omogućuje interakciju između korisnika i softverskog sustava. <br/>
@@ -34,7 +34,7 @@ API - Application Programming Interface, sučelje koje omogućuje interakciju iz
 Kiosk - Samoposlužni uređaj za obavljanje određenih funkcija poput prodaje karata ili pružanja informacija.<br/>
 GUI - Graphical User Interface, grafičko korisničko sučelje koje omogućuje interakciju putem grafičkih elemenata kao što su ikone, gumbi i prozori.<br/>
 
- ### Reference ///
+ ### Reference 
 1. "830-1998" - IEEE Recommended Practice for Software Requirements Specifications
 2. Dokument opisa problemske domene
 3. "Software Engineering (9th Edition) 9th edition (authors) Sommerville, Ian (2010) published by Addison Wesley"
