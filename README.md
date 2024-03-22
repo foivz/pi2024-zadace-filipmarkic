@@ -29,12 +29,9 @@ Naziv softvera koji se čini prikladnim za ovaj projekt je "AutobusniPuls". "Aut
  ### Definicije, akronimi i skraćenice ///
 SRS - Software Requirements Specification, dokument koji definira funkcionalne i nefunkcionalne zahtjeve softverskog sustava. <br/>
 GPS - Global Positioning System, sustav za određivanje geografske lokacije koristeći satelite.<br/>
-RFID - Radio-Frequency Identification, tehnologija koja omogućuje bežično prepoznavanje i praćenje objekata pomoću radio frekvencija.<br/>
 UI - User Interface, sučelje koje omogućuje interakciju između korisnika i softverskog sustava. <br/>
 API - Application Programming Interface, sučelje koje omogućuje interakciju između različitih softverskih komponenti.<br/>
-KPI - Key Performance Indicator, ključni pokazatelji performansi koji se koriste za mjerenje uspješnosti poslovanja.<br/>
 Kiosk - Samoposlužni uređaj za obavljanje određenih funkcija poput prodaje karata ili pružanja informacija.<br/>
-IoT - Internet of Things, koncept koji se odnosi na povezivanje fizičkih uređaja putem interneta radi razmjene podataka i kontrole.<br/>
 GUI - Graphical User Interface, grafičko korisničko sučelje koje omogućuje interakciju putem grafičkih elemenata kao što su ikone, gumbi i prozori.<br/>
 
  ### Reference ///
