@@ -200,7 +200,24 @@ NFZ-6 - softver treba imati sustav pristupne kontrole koji omogućuje upravljanj
 ### Ostalo 
 Nema identificiranih dodatnih nefunkcionalnih zahtjeva
 
-## Skice zaslona ///subota
+## Skice zaslona 
+5.1 Skica zaslona za registraciju korisnika<br/>
+![skica zaslona 1](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/c73c8aaf-b4aa-4846-8ec6-b31c39aea3fd)<br/>
+5.2 Skica zaslona za kupnju karata<br/>
+![skica zaslona 2](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/941dbeac-ff9d-4816-a768-6a4066a70f9f)
+<br/>
+5.3 Skica zaslona za lociranje autobusa<br/>
+![skica zaslona 3](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/38ea13a3-b25e-4cf0-89c0-f1fed4a1cdbd)
+<br/>
+5.4 Skica zaslona za slanje obavijesti o kašnjenju autobusa<br/>
+![skica zaslona 4](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/adf09584-476c-4550-bfc3-05a60b236ce1)
+<br/>
+5.5 Skica zaslona za prikaz broja putnika<br/>
+![skica zaslona 5](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/282f2318-e89f-4afd-89c6-72b27796061a)
+<br/>
+
+
+
 ***
 
 
