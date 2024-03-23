@@ -182,7 +182,7 @@ FZ-11 - Implementacija ove funkcionalnosti planira se nakon što su osnovne funk
 
 ## Nefunkcionalni zahtjevi 
 ### Izgled softvera 
-NFZ-1 - softver treba omogućiti korisnicima mogućnost prilagodbe veličine i stila fontova kako bi se zadovoljile individualne preferencije korisnika
+NFZ-1 - softver treba omogućiti korisnicima mogućnost prilagodbe veličine i stila fontova kako bi se zadovoljile individualne preferencije korisnika<br/>
 NFZ-2 - sučelje treba imati minimalistički dizajn s naglaskom na jasnoću i jednostavnost kako bi se smanjila distrakcija i poboljšala upotrebljivost
 
 ### Upotrebljivost softvera 
