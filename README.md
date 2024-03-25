@@ -1,5 +1,5 @@
 # Naziv projekta
-AutobusniPuls 
+AutobusniPuls - sustav upravljanja gradskim prijevozom
 
 ## Podaci o studentu
 
