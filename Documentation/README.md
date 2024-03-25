@@ -14,3 +14,7 @@ Ovo je pomoćna mapa za dokumente i slike koje ćete referencirati u dokumentaci
 ## Skica zaslona za prikaz broja putnika<br/>
 ![skica zaslona 5 1](https://github.com/foivz/pi2024-zadace-filipmarkic/assets/150360331/ddb8457d-2298-4ed5-a0ad-e2d8cf73c3d0)
 <br/>
+
+
+
+
