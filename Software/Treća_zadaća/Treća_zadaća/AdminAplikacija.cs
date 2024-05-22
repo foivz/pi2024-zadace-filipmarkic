@@ -35,10 +35,48 @@ namespace Treća_zadaća
 
         private void GumbZaAdd_Click(object sender, EventArgs e)
         {
-
+            DodajAutobusnuStanicu dodajAutobusnuStanicu = new DodajAutobusnuStanicu();
+            dodajAutobusnuStanicu.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AutobusniPulsLabel_Click(object sender, EventArgs e)
+        {
+            //bespotrebno
+        }
+
+        private void GumbZaDelete_Click(object sender, EventArgs e)
+        {
+            BrisiAutobusnuStanicu brisiAutobusnuStanicu = new BrisiAutobusnuStanicu();
+            brisiAutobusnuStanicu.Show();
+        }
+
+        private void GumbZaUpdate_Click(object sender, EventArgs e)
+        {
+            AzurirajAutobusnuStanicu azurirajAutobusnuStanicu = new AzurirajAutobusnuStanicu();
+            azurirajAutobusnuStanicu.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            //bespotrebno
+        }
+
+        private void AutobusneStaniceLabel_Click(object sender, EventArgs e)
+        {
+            //bespotrebno
+        }
+
+        private void PretraziLabel_Click(object sender, EventArgs e)
+        {
+            //bespotrebno
+        }
+
+        private void AutobusnaStanicaTrazi_TextChanged(object sender, EventArgs e)
         {
 
         }

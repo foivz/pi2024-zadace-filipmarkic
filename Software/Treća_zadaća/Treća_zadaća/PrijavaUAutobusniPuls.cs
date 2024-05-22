@@ -60,9 +60,7 @@ namespace Treća_zadaća
                 {
                     Hide();
                     MessageBox.Show("Pristupili ste aplikaciji kao admin!", "Uspješna prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
                     AdminAplikacija adminAplikacija = new AdminAplikacija();
-                    
                     adminAplikacija.Show();
                     
                 } 
@@ -80,7 +78,10 @@ namespace Treća_zadaća
             {
                 if (LozinkaTextBox.Text == lozinke[1])
                 {
+                    Hide();
                     MessageBox.Show("Pristupili ste aplikaciji kao korisnik!", "Uspješna prijava", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    KorisnikAplikacija korisnikAplikacija = new KorisnikAplikacija();
+                    korisnikAplikacija.Show();
                 } 
                 
                 else 

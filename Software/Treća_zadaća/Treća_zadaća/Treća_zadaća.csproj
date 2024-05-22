@@ -59,6 +59,30 @@
     <Compile Include="AutobusniPuls.Designer.cs">
       <DependentUpon>AutobusniPuls.cs</DependentUpon>
     </Compile>
+    <Compile Include="AzurirajAutobusnuStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AzurirajAutobusnuStanicu.Designer.cs">
+      <DependentUpon>AzurirajAutobusnuStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrisiAutobusnuStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrisiAutobusnuStanicu.Designer.cs">
+      <DependentUpon>BrisiAutobusnuStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajAutobusnuStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajAutobusnuStanicu.Designer.cs">
+      <DependentUpon>DodajAutobusnuStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KorisnikAplikacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KorisnikAplikacija.Designer.cs">
+      <DependentUpon>KorisnikAplikacija.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrijavaUAutobusniPuls.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +96,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AutobusniPuls.resx">
       <DependentUpon>AutobusniPuls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AzurirajAutobusnuStanicu.resx">
+      <DependentUpon>AzurirajAutobusnuStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrisiAutobusnuStanicu.resx">
+      <DependentUpon>BrisiAutobusnuStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajAutobusnuStanicu.resx">
+      <DependentUpon>DodajAutobusnuStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KorisnikAplikacija.resx">
+      <DependentUpon>KorisnikAplikacija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrijavaUAutobusniPuls.resx">
       <DependentUpon>PrijavaUAutobusniPuls.cs</DependentUpon>

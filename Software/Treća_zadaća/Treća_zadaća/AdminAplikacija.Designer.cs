@@ -37,6 +37,8 @@
             this.GumbZaAdd = new System.Windows.Forms.Button();
             this.AutobusniPulsLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.AutobusnaStanicaTrazi = new System.Windows.Forms.TextBox();
+            this.PretraziLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -45,11 +47,12 @@
             // 
             this.AutobusneStaniceLabel.AutoSize = true;
             this.AutobusneStaniceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.AutobusneStaniceLabel.Location = new System.Drawing.Point(344, 62);
+            this.AutobusneStaniceLabel.Location = new System.Drawing.Point(346, 29);
             this.AutobusneStaniceLabel.Name = "AutobusneStaniceLabel";
             this.AutobusneStaniceLabel.Size = new System.Drawing.Size(195, 25);
             this.AutobusneStaniceLabel.TabIndex = 0;
             this.AutobusneStaniceLabel.Text = "Autobusne Stanice";
+            this.AutobusneStaniceLabel.Click += new System.EventHandler(this.AutobusneStaniceLabel_Click);
             // 
             // pictureBox1
             // 
@@ -59,6 +62,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(101, 75);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // GumbZaOdjavu
             // 
@@ -78,6 +82,7 @@
             this.GumbZaUpdate.TabIndex = 3;
             this.GumbZaUpdate.Text = "Ažuriraj";
             this.GumbZaUpdate.UseVisualStyleBackColor = true;
+            this.GumbZaUpdate.Click += new System.EventHandler(this.GumbZaUpdate_Click);
             // 
             // GumbZaDelete
             // 
@@ -87,6 +92,7 @@
             this.GumbZaDelete.TabIndex = 4;
             this.GumbZaDelete.Text = "Briši";
             this.GumbZaDelete.UseVisualStyleBackColor = true;
+            this.GumbZaDelete.Click += new System.EventHandler(this.GumbZaDelete_Click);
             // 
             // GumbZaAdd
             // 
@@ -107,6 +113,7 @@
             this.AutobusniPulsLabel.Size = new System.Drawing.Size(87, 13);
             this.AutobusniPulsLabel.TabIndex = 6;
             this.AutobusniPulsLabel.Text = "AutobusniPuls";
+            this.AutobusniPulsLabel.Click += new System.EventHandler(this.AutobusniPulsLabel_Click);
             // 
             // dataGridView1
             // 
@@ -117,11 +124,30 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // AutobusnaStanicaTrazi
+            // 
+            this.AutobusnaStanicaTrazi.Location = new System.Drawing.Point(367, 83);
+            this.AutobusnaStanicaTrazi.Name = "AutobusnaStanicaTrazi";
+            this.AutobusnaStanicaTrazi.Size = new System.Drawing.Size(174, 20);
+            this.AutobusnaStanicaTrazi.TabIndex = 18;
+            // 
+            // PretraziLabel
+            // 
+            this.PretraziLabel.AutoSize = true;
+            this.PretraziLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.PretraziLabel.Location = new System.Drawing.Point(271, 84);
+            this.PretraziLabel.Name = "PretraziLabel";
+            this.PretraziLabel.Size = new System.Drawing.Size(90, 15);
+            this.PretraziLabel.TabIndex = 17;
+            this.PretraziLabel.Text = "Traži (lokacija):";
+            // 
             // AdminAplikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AutobusnaStanicaTrazi);
+            this.Controls.Add(this.PretraziLabel);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.AutobusniPulsLabel);
             this.Controls.Add(this.GumbZaAdd);
@@ -131,7 +157,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AutobusneStaniceLabel);
             this.Name = "AdminAplikacija";
-            this.Text = "AutobusniPuls";
+            this.Text = "AutobusniPuls (Admin)";
             this.Load += new System.EventHandler(this.AdminAplikacija_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -150,5 +176,7 @@
         private System.Windows.Forms.Button GumbZaAdd;
         private System.Windows.Forms.Label AutobusniPulsLabel;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox AutobusnaStanicaTrazi;
+        private System.Windows.Forms.Label PretraziLabel;
     }
 }
