@@ -32,7 +32,21 @@ namespace Treća_zadaća
             dataGridView1.Columns["Naziv"].DisplayIndex = 1;
             dataGridView1.Columns["Lokacija"].DisplayIndex = 2;
         }
-        
+
+        private void GumbZaPretragu_Click(object sender, EventArgs e)
+        {
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
+            bool postojiTrazenaStanica = autobusneStanice.Exists(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text);
+            if (postojiTrazenaStanica)
+            {
+                dataGridView1.DataSource = autobusneStanice.Where(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text).ToList();
+            }
+            else
+            {
+                MessageBox.Show("Nema takve autobusne stanice", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PrikaziAutobusneStanice();
+            }
+        }
 
         private void GumbZaOdjavu_Click(object sender, EventArgs e)
         {
@@ -40,8 +54,6 @@ namespace Treća_zadaća
             Close();
             autobusniPuls.Show();
         }
-
-       
 
         private void GumbZaAdd_Click(object sender, EventArgs e)
         {
@@ -51,12 +63,7 @@ namespace Treća_zadaća
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void AutobusniPulsLabel_Click(object sender, EventArgs e)
-        {
-            //bespotrebno
+            
         }
 
         private void GumbZaDelete_Click(object sender, EventArgs e)
@@ -71,24 +78,5 @@ namespace Treća_zadaća
             azurirajAutobusnuStanicu.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //bespotrebno
-        }
-
-        private void AutobusneStaniceLabel_Click(object sender, EventArgs e)
-        {
-            //bespotrebno
-        }
-
-        private void PretraziLabel_Click(object sender, EventArgs e)
-        {
-            //bespotrebno
-        }
-
-        private void AutobusnaStanicaTrazi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

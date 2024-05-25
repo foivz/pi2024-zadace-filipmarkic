@@ -30,7 +30,6 @@ namespace Treća_zadaća.Repozitoriji
                 ID = id,
                 Naziv = naziv,
                 Lokacija = lokacija,
-
             };
 
             return autobusnaStanica;

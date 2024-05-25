@@ -19,14 +19,19 @@ namespace Treća_zadaća
             InitializeComponent();
         }
 
-        private void AutobusneStaniceLabel_Click(object sender, EventArgs e)
+        private void GumbZaPretragu_Click(object sender, EventArgs e)
         {
-            //bespotrebno
-        }
-
-        private void AutobusnaStanicaTrazi_TextChanged(object sender, EventArgs e)
-        {
-
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
+            bool postojiTrazenaStanica = autobusneStanice.Exists(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text);
+            if (postojiTrazenaStanica)
+            {
+                dataGridView1.DataSource = autobusneStanice.Where(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text).ToList();
+            }
+            else
+            {
+                MessageBox.Show("Nema takve autobusne stanice", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PrikaziAutobusneStanice();
+            }
         }
 
         private void GumbZaOdjavu_Click(object sender, EventArgs e)
@@ -48,6 +53,11 @@ namespace Treća_zadaća
             dataGridView1.Columns["ID"].DisplayIndex = 0;
             dataGridView1.Columns["Naziv"].DisplayIndex = 1;
             dataGridView1.Columns["Lokacija"].DisplayIndex = 2;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //bespotrebno
         }
     }
 }
