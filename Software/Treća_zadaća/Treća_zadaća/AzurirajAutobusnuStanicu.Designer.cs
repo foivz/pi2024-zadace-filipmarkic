@@ -131,7 +131,7 @@
             this.Controls.Add(this.GumbOdustani);
             this.Controls.Add(this.GumbZaAzuriranje);
             this.Name = "AzurirajAutobusnuStanicu";
-            this.Text = "AzurirajAutobusnuStanicu";
+            this.Text = "Azuriranje autobusne stanice";
             this.ResumeLayout(false);
             this.PerformLayout();
 

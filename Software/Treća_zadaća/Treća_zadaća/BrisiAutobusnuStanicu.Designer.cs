@@ -139,7 +139,7 @@
             this.Controls.Add(this.GumbOdustani);
             this.Controls.Add(this.GumbZaBrisanje);
             this.Name = "BrisiAutobusnuStanicu";
-            this.Text = "BrisiAutobusnuStanicu";
+            this.Text = "Brisanje autobusne stanice";
             this.ResumeLayout(false);
             this.PerformLayout();
 

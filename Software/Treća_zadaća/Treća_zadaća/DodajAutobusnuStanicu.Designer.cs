@@ -131,7 +131,7 @@
             this.Controls.Add(this.GumbOdustani);
             this.Controls.Add(this.GumbZaDodavanje);
             this.Name = "DodajAutobusnuStanicu";
-            this.Text = "DodajAutobusnuStanicu";
+            this.Text = "Dodavanje autobusne stanice";
             this.Load += new System.EventHandler(this.DodajAutobusnuStanicu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

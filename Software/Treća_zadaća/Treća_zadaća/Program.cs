@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace Treća_zadaća
         [STAThread]
         static void Main()
         {
+            DB.SetConfiguration("PI2324_fmarkic22_DB", "PI2324_fmarkic22_User", "ej9m)N.f");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AutobusniPuls());

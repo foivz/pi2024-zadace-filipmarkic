@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treća_zadaća.Modeli;
+using Treća_zadaća.Repozitoriji;
 
 namespace Treća_zadaća
 {
@@ -32,6 +34,20 @@ namespace Treća_zadaća
             AutobusniPuls autobusniPuls = new AutobusniPuls();
             Close();
             autobusniPuls.Show();
+        }
+
+        private void KorisnikAplikacija_Load(object sender, EventArgs e)
+        {
+            PrikaziAutobusneStanice();
+        }
+
+        private void PrikaziAutobusneStanice()
+        {
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
+            dataGridView1.DataSource = autobusneStanice;
+            dataGridView1.Columns["ID"].DisplayIndex = 0;
+            dataGridView1.Columns["Naziv"].DisplayIndex = 1;
+            dataGridView1.Columns["Lokacija"].DisplayIndex = 2;
         }
     }
 }

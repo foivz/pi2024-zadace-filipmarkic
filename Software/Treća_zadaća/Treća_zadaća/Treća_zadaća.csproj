@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DBLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Downloads\DBLayer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -83,6 +87,7 @@
     <Compile Include="KorisnikAplikacija.Designer.cs">
       <DependentUpon>KorisnikAplikacija.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modeli\AutobusnaStanica.cs" />
     <Compile Include="PrijavaUAutobusniPuls.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +96,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repozitoriji\RepozitorijAutobusnihStanica.cs" />
     <EmbeddedResource Include="AdminAplikacija.resx">
       <DependentUpon>AdminAplikacija.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DLLs\DBLayer.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
