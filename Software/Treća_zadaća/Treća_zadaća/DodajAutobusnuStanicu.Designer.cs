@@ -30,10 +30,10 @@
         {
             this.GumbOdustani = new System.Windows.Forms.Button();
             this.GumbZaDodavanje = new System.Windows.Forms.Button();
-            this.AutobusnaStanicaTrazi = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.AutobusnaStanicaIDInput = new System.Windows.Forms.TextBox();
+            this.AutobusnaStanicaLokacijaInput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AutobusnaStanicaNazivInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LabelNaVrhuEkrana = new System.Windows.Forms.Label();
@@ -59,19 +59,19 @@
             this.GumbZaDodavanje.UseVisualStyleBackColor = true;
             this.GumbZaDodavanje.Click += new System.EventHandler(this.GumbZaDodavanje_Click);
             // 
-            // AutobusnaStanicaTrazi
+            // AutobusnaStanicaIDInput
             // 
-            this.AutobusnaStanicaTrazi.Location = new System.Drawing.Point(342, 157);
-            this.AutobusnaStanicaTrazi.Name = "AutobusnaStanicaTrazi";
-            this.AutobusnaStanicaTrazi.Size = new System.Drawing.Size(174, 20);
-            this.AutobusnaStanicaTrazi.TabIndex = 20;
+            this.AutobusnaStanicaIDInput.Location = new System.Drawing.Point(342, 157);
+            this.AutobusnaStanicaIDInput.Name = "AutobusnaStanicaIDInput";
+            this.AutobusnaStanicaIDInput.Size = new System.Drawing.Size(174, 20);
+            this.AutobusnaStanicaIDInput.TabIndex = 20;
             // 
-            // textBox1
+            // AutobusnaStanicaLokacijaInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(342, 228);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 22;
+            this.AutobusnaStanicaLokacijaInput.Location = new System.Drawing.Point(342, 228);
+            this.AutobusnaStanicaLokacijaInput.Name = "AutobusnaStanicaLokacijaInput";
+            this.AutobusnaStanicaLokacijaInput.Size = new System.Drawing.Size(174, 20);
+            this.AutobusnaStanicaLokacijaInput.TabIndex = 22;
             // 
             // label1
             // 
@@ -82,12 +82,12 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Unesi lokaciju:";
             // 
-            // textBox2
+            // AutobusnaStanicaNazivInput
             // 
-            this.textBox2.Location = new System.Drawing.Point(342, 298);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 24;
+            this.AutobusnaStanicaNazivInput.Location = new System.Drawing.Point(342, 298);
+            this.AutobusnaStanicaNazivInput.Name = "AutobusnaStanicaNazivInput";
+            this.AutobusnaStanicaNazivInput.Size = new System.Drawing.Size(174, 20);
+            this.AutobusnaStanicaNazivInput.TabIndex = 24;
             // 
             // label2
             // 
@@ -123,11 +123,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.LabelNaVrhuEkrana);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.AutobusnaStanicaNazivInput);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.AutobusnaStanicaLokacijaInput);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.AutobusnaStanicaTrazi);
+            this.Controls.Add(this.AutobusnaStanicaIDInput);
             this.Controls.Add(this.GumbOdustani);
             this.Controls.Add(this.GumbZaDodavanje);
             this.Name = "DodajAutobusnuStanicu";
@@ -142,10 +142,10 @@
 
         private System.Windows.Forms.Button GumbOdustani;
         private System.Windows.Forms.Button GumbZaDodavanje;
-        private System.Windows.Forms.TextBox AutobusnaStanicaTrazi;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox AutobusnaStanicaIDInput;
+        private System.Windows.Forms.TextBox AutobusnaStanicaLokacijaInput;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox AutobusnaStanicaNazivInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LabelNaVrhuEkrana;

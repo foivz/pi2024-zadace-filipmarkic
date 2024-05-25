@@ -34,7 +34,7 @@ namespace Treća_zadaća.Repozitoriji
 
             return autobusnaStanica;
         }
-
+        //beskorisna metoda?? za dohvat pojedine stanice
         public static AutobusnaStanica DohvatiAutobusnuStanicu(string lokacija) //pretrazivanje po lokaciji
         {
             AutobusnaStanica autobusnaStanica = null;
