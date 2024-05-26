@@ -36,10 +36,10 @@ namespace Treća_zadaća.Repozitoriji
         }
 
         //beskorisna metoda?? za dohvat pojedine stanice
-        public static AutobusnaStanica DohvatiAutobusnuStanicu(string lokacija) //pretrazivanje po lokaciji
+        public static AutobusnaStanica DohvatiAutobusnuStanicu(int id) //pretrazivanje po lokaciji
         {
             AutobusnaStanica autobusnaStanica = null;
-            string sql = $"SELECT * FROM AutobusneStanice WHERE Lokacija = '{lokacija}'";
+            string sql = $"SELECT * FROM AutobusneStanice WHERE Lokacija = {id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)
@@ -66,28 +66,25 @@ namespace Treća_zadaća.Repozitoriji
             reader.Close();
             DB.CloseConnection();
             return autobusneStanice;
-            
         }
 
         public static void DodajAutobusnuStanicu(AutobusnaStanica autobusnaStanica) //dodavanje nove autobusne stanice potrebno doraditi
         {
-            //dodati provjeru je li ID vec postoji, ako postoji ne dodavati - ID je autoincrement ili ga generirati ili javiti upozorenje
             string sql = $"INSERT INTO AutobusneStanice (ID, Naziv, Lokacija) VALUES ({autobusnaStanica.ID}, '{autobusnaStanica.Naziv}', '{autobusnaStanica.Lokacija}')";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
 
-        public static void AzurirajAutobusnuStanicu(AutobusnaStanica autobusnaStanica) //azuriranje po ID-u, potrebno doraditi
+        public static void AzurirajAutobusnuStanicu(int id, string naziv, string lokacija) //azuriranje po ID-u
         {
-            //dodati provjeru je li ID postoji, tj postoji li stanica koja se zeli azurirati
-            string sql = $"UPDATE AutobusneStanice SET Naziv = '{autobusnaStanica.Naziv}', Lokacija = '{autobusnaStanica.Lokacija}' WHERE ID = {autobusnaStanica.ID}";
+            string sql = $"UPDATE AutobusneStanice SET Naziv = '{naziv}', Lokacija = '{lokacija}' WHERE ID = {id}";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
 
-        public static void ObrisiAutobusnuStanicu(string lokacija)//brisanje po lokaciji, dodati provjeru je li Id postoji
+        public static void ObrisiAutobusnuStanicu(string lokacija)//brisanje po lokaciji
         {
             string sql = $"DELETE FROM AutobusneStanice WHERE Lokacija = '{lokacija}'";
             DB.OpenConnection();

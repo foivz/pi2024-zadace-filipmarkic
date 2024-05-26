@@ -96,6 +96,7 @@
             this.IDAutobusneStanice.Name = "IDAutobusneStanice";
             this.IDAutobusneStanice.Size = new System.Drawing.Size(174, 20);
             this.IDAutobusneStanice.TabIndex = 29;
+            this.IDAutobusneStanice.TextChanged += new System.EventHandler(this.IDAutobusneStanice_TextChanged);
             // 
             // GumbOdustani
             // 
@@ -115,6 +116,7 @@
             this.GumbZaAzuriranje.TabIndex = 27;
             this.GumbZaAzuriranje.Text = "Ažuriraj";
             this.GumbZaAzuriranje.UseVisualStyleBackColor = true;
+            this.GumbZaAzuriranje.Click += new System.EventHandler(this.GumbZaAzuriranje_Click);
             // 
             // AzurirajAutobusnuStanicu
             // 
