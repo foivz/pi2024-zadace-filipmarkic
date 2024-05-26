@@ -40,6 +40,7 @@
             this.GumbZaPretragu = new System.Windows.Forms.Button();
             this.AutobusnaStanicaTrazi = new System.Windows.Forms.TextBox();
             this.PretraziLabel = new System.Windows.Forms.Label();
+            this.GumbZaUpdatePrikazaTablice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -124,7 +125,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(549, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 246);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -155,11 +156,22 @@
             this.PretraziLabel.TabIndex = 18;
             this.PretraziLabel.Text = "Lokacija:";
             // 
+            // GumbZaUpdatePrikazaTablice
+            // 
+            this.GumbZaUpdatePrikazaTablice.Location = new System.Drawing.Point(364, 447);
+            this.GumbZaUpdatePrikazaTablice.Name = "GumbZaUpdatePrikazaTablice";
+            this.GumbZaUpdatePrikazaTablice.Size = new System.Drawing.Size(163, 34);
+            this.GumbZaUpdatePrikazaTablice.TabIndex = 21;
+            this.GumbZaUpdatePrikazaTablice.Text = "Ažuriraj tablični prikaz";
+            this.GumbZaUpdatePrikazaTablice.UseVisualStyleBackColor = true;
+            this.GumbZaUpdatePrikazaTablice.Click += new System.EventHandler(this.GumbZaUpdatePrikazaTablice_Click);
+            // 
             // AdminAplikacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 535);
+            this.Controls.Add(this.GumbZaUpdatePrikazaTablice);
             this.Controls.Add(this.GumbZaPretragu);
             this.Controls.Add(this.AutobusnaStanicaTrazi);
             this.Controls.Add(this.PretraziLabel);
@@ -194,5 +206,6 @@
         private System.Windows.Forms.Button GumbZaPretragu;
         private System.Windows.Forms.TextBox AutobusnaStanicaTrazi;
         private System.Windows.Forms.Label PretraziLabel;
+        private System.Windows.Forms.Button GumbZaUpdatePrikazaTablice;
     }
 }

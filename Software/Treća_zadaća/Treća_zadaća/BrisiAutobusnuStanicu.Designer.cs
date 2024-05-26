@@ -44,7 +44,7 @@
             this.LabelNaVrhuEkrana.TabIndex = 44;
             this.LabelNaVrhuEkrana.Text = "Forma za brisanje postojeće autobusne stanice";
             this.LabelNaVrhuEkrana.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.LabelNaVrhuEkrana.Click += new System.EventHandler(this.LabelNaVrhuEkrana_Click);
+            
             // 
             // LokacijaAutobusneStaniceZaBrisanje
             // 
@@ -52,7 +52,7 @@
             this.LokacijaAutobusneStaniceZaBrisanje.Name = "LokacijaAutobusneStaniceZaBrisanje";
             this.LokacijaAutobusneStaniceZaBrisanje.Size = new System.Drawing.Size(174, 20);
             this.LokacijaAutobusneStaniceZaBrisanje.TabIndex = 40;
-            this.LokacijaAutobusneStaniceZaBrisanje.TextChanged += new System.EventHandler(this.AzuriranaLokacijaAutobusneStanice_TextChanged);
+ 
             // 
             // UnesiLokacijuLabel
             // 
@@ -62,7 +62,7 @@
             this.UnesiLokacijuLabel.Size = new System.Drawing.Size(107, 20);
             this.UnesiLokacijuLabel.TabIndex = 39;
             this.UnesiLokacijuLabel.Text = "Lokacija stanice:";
-            this.UnesiLokacijuLabel.Click += new System.EventHandler(this.UnesiLokacijuLabel_Click);
+ 
             // 
             // GumbOdustani
             // 
@@ -82,7 +82,7 @@
             this.GumbZaBrisanje.TabIndex = 36;
             this.GumbZaBrisanje.Text = "Briši";
             this.GumbZaBrisanje.UseVisualStyleBackColor = true;
-            this.GumbZaBrisanje.Click += new System.EventHandler(this.GumbZaAzuriranje_Click);
+            this.GumbZaBrisanje.Click += new System.EventHandler(this.GumbZaBrisanje_Click);
             // 
             // BrisiAutobusnuStanicu
             // 

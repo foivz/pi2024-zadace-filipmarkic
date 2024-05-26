@@ -28,17 +28,18 @@ namespace Treća_zadaća.Repozitoriji
             var autobusnaStanica = new AutobusnaStanica(id, naziv, lokacija)
             {
                 ID = id,
-                Naziv = naziv,
-                Lokacija = lokacija,
+                Naziv = naziv.Trim(),
+                Lokacija = lokacija.Trim(),
             };
 
             return autobusnaStanica;
         }
+
         //beskorisna metoda?? za dohvat pojedine stanice
         public static AutobusnaStanica DohvatiAutobusnuStanicu(string lokacija) //pretrazivanje po lokaciji
         {
             AutobusnaStanica autobusnaStanica = null;
-            string sql = $"SELECT * FROM AutobusneStanice WHERE Lokacija = {lokacija}";
+            string sql = $"SELECT * FROM AutobusneStanice WHERE Lokacija = '{lokacija}'";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)
@@ -86,10 +87,9 @@ namespace Treća_zadaća.Repozitoriji
             DB.CloseConnection();
         }
 
-        public static void ObrisiAutobusnuStanicu(int id)//brisanje po ID-u, dodati provjeru je li Id postoji
+        public static void ObrisiAutobusnuStanicu(string lokacija)//brisanje po lokaciji, dodati provjeru je li Id postoji
         {
-            //dodati provjeru je li ID postoji, tj postoji li stanica koja se zeli obrisati, ako ne postoji javiti upozorenje
-            string sql = $"DELETE FROM AutobusneStanice WHERE ID = {id}";
+            string sql = $"DELETE FROM AutobusneStanice WHERE Lokacija = '{lokacija}'";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treća_zadaća.Modeli;
+using Treća_zadaća.Repozitoriji;
 
 namespace Treća_zadaća
 {
@@ -17,49 +19,33 @@ namespace Treća_zadaća
             InitializeComponent();
         }
 
-        private void LabelNaVrhuEkrana_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UnesiIDLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AzuriraniNazivAutobusneStanice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UnesiNazivLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AzuriranaLokacijaAutobusneStanice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UnesiLokacijuLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IDAutobusneStanice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void GumbOdustani_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void GumbZaAzuriranje_Click(object sender, EventArgs e)
+        private void GumbZaBrisanje_Click(object sender, EventArgs e)
         {
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();            
+            bool postojiTrazenaStanicaLokacija = autobusneStanice.Exists(stanica => stanica.Lokacija == LokacijaAutobusneStaniceZaBrisanje.Text);
+            
+            if (string.IsNullOrEmpty(LokacijaAutobusneStaniceZaBrisanje.Text))
+            {
+                MessageBox.Show("Niste unijeli sve podatke", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            else if (postojiTrazenaStanicaLokacija)
+            {
+                RepozitorijAutobusnihStanica.ObrisiAutobusnuStanicu(LokacijaAutobusneStaniceZaBrisanje.Text);
+                MessageBox.Show("Uspješno obrisana autobusna stanica", "Obavijest", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Autobusna stanica na ovoj lokaciji ne postoji", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

@@ -15,8 +15,8 @@ namespace Treća_zadaća.Modeli
         public AutobusnaStanica(int id, string naziv, string lokacija)
         {
             ID = id;
-            Naziv = naziv;
-            Lokacija = lokacija;
+            Naziv = naziv.Trim();
+            Lokacija = lokacija.Trim();
         }
 
         public override string ToString()

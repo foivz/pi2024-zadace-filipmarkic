@@ -78,5 +78,9 @@ namespace Treća_zadaća
             azurirajAutobusnuStanicu.Show();
         }
 
+        private void GumbZaUpdatePrikazaTablice_Click(object sender, EventArgs e)
+        {
+            PrikaziAutobusneStanice();
+        }
     }
 }
