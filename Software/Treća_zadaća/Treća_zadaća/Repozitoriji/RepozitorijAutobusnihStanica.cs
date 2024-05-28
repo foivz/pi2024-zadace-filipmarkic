@@ -76,12 +76,13 @@ namespace Treća_zadaća.Repozitoriji
             DB.CloseConnection();
         }
 
-        public static void AzurirajAutobusnuStanicu(int id, string naziv, string lokacija) //azuriranje po ID-u
+        public static void AzurirajAutobusnuStanicu(int id, string naziv, string lokacija) //svega osim ID-a
         {
             string sql = $"UPDATE AutobusneStanice SET Naziv = '{naziv}', Lokacija = '{lokacija}' WHERE ID = {id}";
             DB.OpenConnection();
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
+            
         }
 
         public static void ObrisiAutobusnuStanicu(string lokacija)//brisanje po lokaciji
@@ -91,8 +92,6 @@ namespace Treća_zadaća.Repozitoriji
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
-
-
 
     }
 }
