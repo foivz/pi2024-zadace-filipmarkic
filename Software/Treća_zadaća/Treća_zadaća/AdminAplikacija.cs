@@ -57,7 +57,7 @@ namespace Treća_zadaća
 
         private void GumbZaAdd_Click(object sender, EventArgs e)
         {
-            DodajAutobusnuStanicu dodajAutobusnuStanicu = new DodajAutobusnuStanicu();
+            DodajStanicu dodajAutobusnuStanicu = new DodajStanicu();
             dodajAutobusnuStanicu.Show();
         }
 
@@ -68,13 +68,13 @@ namespace Treća_zadaća
 
         private void GumbZaDelete_Click(object sender, EventArgs e)
         {
-            BrisiAutobusnuStanicu brisiAutobusnuStanicu = new BrisiAutobusnuStanicu();
+            BrisiStanicu brisiAutobusnuStanicu = new BrisiStanicu();
             brisiAutobusnuStanicu.Show();
         }
 
         private void GumbZaUpdate_Click(object sender, EventArgs e)
         {
-            AzurirajAutobusnuStanicu azurirajAutobusnuStanicu = new AzurirajAutobusnuStanicu();
+            AzurirajStanicu azurirajAutobusnuStanicu = new AzurirajStanicu();
             azurirajAutobusnuStanicu.Show();
         }
 

@@ -12,9 +12,9 @@ using Treća_zadaća.Repozitoriji;
 
 namespace Treća_zadaća
 {
-    public partial class BrisiAutobusnuStanicu : Form
+    public partial class BrisiStanicu : Form
     {
-        public BrisiAutobusnuStanicu()
+        public BrisiStanicu()
         {
             InitializeComponent();
         }

@@ -63,23 +63,23 @@
     <Compile Include="AutobusniPuls.Designer.cs">
       <DependentUpon>AutobusniPuls.cs</DependentUpon>
     </Compile>
-    <Compile Include="AzurirajAutobusnuStanicu.cs">
+    <Compile Include="AzurirajStanicu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AzurirajAutobusnuStanicu.Designer.cs">
-      <DependentUpon>AzurirajAutobusnuStanicu.cs</DependentUpon>
+    <Compile Include="AzurirajStanicu.Designer.cs">
+      <DependentUpon>AzurirajStanicu.cs</DependentUpon>
     </Compile>
-    <Compile Include="BrisiAutobusnuStanicu.cs">
+    <Compile Include="BrisiStanicu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BrisiAutobusnuStanicu.Designer.cs">
-      <DependentUpon>BrisiAutobusnuStanicu.cs</DependentUpon>
+    <Compile Include="BrisiStanicu.Designer.cs">
+      <DependentUpon>BrisiStanicu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DodajAutobusnuStanicu.cs">
+    <Compile Include="DodajStanicu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DodajAutobusnuStanicu.Designer.cs">
-      <DependentUpon>DodajAutobusnuStanicu.cs</DependentUpon>
+    <Compile Include="DodajStanicu.Designer.cs">
+      <DependentUpon>DodajStanicu.cs</DependentUpon>
     </Compile>
     <Compile Include="KorisnikAplikacija.cs">
       <SubType>Form</SubType>
@@ -103,14 +103,14 @@
     <EmbeddedResource Include="AutobusniPuls.resx">
       <DependentUpon>AutobusniPuls.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AzurirajAutobusnuStanicu.resx">
-      <DependentUpon>AzurirajAutobusnuStanicu.cs</DependentUpon>
+    <EmbeddedResource Include="AzurirajStanicu.resx">
+      <DependentUpon>AzurirajStanicu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BrisiAutobusnuStanicu.resx">
-      <DependentUpon>BrisiAutobusnuStanicu.cs</DependentUpon>
+    <EmbeddedResource Include="BrisiStanicu.resx">
+      <DependentUpon>BrisiStanicu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DodajAutobusnuStanicu.resx">
-      <DependentUpon>DodajAutobusnuStanicu.cs</DependentUpon>
+    <EmbeddedResource Include="DodajStanicu.resx">
+      <DependentUpon>DodajStanicu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KorisnikAplikacija.resx">
       <DependentUpon>KorisnikAplikacija.cs</DependentUpon>

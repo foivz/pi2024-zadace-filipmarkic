@@ -13,9 +13,9 @@ using Treća_zadaća.Repozitoriji;
 
 namespace Treća_zadaća
 {
-    public partial class DodajAutobusnuStanicu : Form
+    public partial class DodajStanicu : Form
     {
-        public DodajAutobusnuStanicu()
+        public DodajStanicu()
         {
             InitializeComponent();
         }

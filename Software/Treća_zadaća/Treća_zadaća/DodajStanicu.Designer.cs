@@ -1,6 +1,6 @@
 ﻿namespace Treća_zadaća
 {
-    partial class DodajAutobusnuStanicu
+    partial class DodajStanicu
     {
         /// <summary>
         /// Required designer variable.
