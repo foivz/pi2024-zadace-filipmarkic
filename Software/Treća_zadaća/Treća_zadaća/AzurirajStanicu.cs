@@ -12,9 +12,9 @@ using Treća_zadaća.Repozitoriji;
 
 namespace Treća_zadaća
 {
-    public partial class AzurirajStanicu : Form
+    public partial class LabelID : Form
     {
-        public AzurirajStanicu()
+        public LabelID()
         {
             InitializeComponent();
             List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
@@ -88,6 +88,11 @@ namespace Treća_zadaća
         }
 
         private void AzuriranaLokacijaAutobusneStanice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

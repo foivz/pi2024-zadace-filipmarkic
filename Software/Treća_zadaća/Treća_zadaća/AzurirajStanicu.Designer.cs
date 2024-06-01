@@ -1,6 +1,6 @@
 ﻿namespace Treća_zadaća
 {
-    partial class AzurirajStanicu
+    partial class LabelID
     {
         /// <summary>
         /// Required designer variable.
@@ -34,6 +34,9 @@
             this.GumbOdustani = new System.Windows.Forms.Button();
             this.GumbZaAzuriranje = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LabelLokacija = new System.Windows.Forms.Label();
+            this.LabelNaziv = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LabelNaVrhuEkrana
@@ -91,17 +94,48 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(421, 184);
+            this.comboBox1.Location = new System.Drawing.Point(418, 184);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 24);
             this.comboBox1.TabIndex = 36;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // AzurirajStanicu
+            // LabelLokacija
+            // 
+            this.LabelLokacija.AutoSize = true;
+            this.LabelLokacija.Location = new System.Drawing.Point(415, 260);
+            this.LabelLokacija.Name = "LabelLokacija";
+            this.LabelLokacija.Size = new System.Drawing.Size(90, 16);
+            this.LabelLokacija.TabIndex = 37;
+            this.LabelLokacija.Text = "Nova lokacija";
+            this.LabelLokacija.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // LabelNaziv
+            // 
+            this.LabelNaziv.AutoSize = true;
+            this.LabelNaziv.Location = new System.Drawing.Point(418, 346);
+            this.LabelNaziv.Name = "LabelNaziv";
+            this.LabelNaziv.Size = new System.Drawing.Size(69, 16);
+            this.LabelNaziv.TabIndex = 38;
+            this.LabelNaziv.Text = "Novi naziv";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(418, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 16);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "ID (ne mijenjaj ručno)";
+            // 
+            // LabelID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelNaziv);
+            this.Controls.Add(this.LabelLokacija);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.LabelNaVrhuEkrana);
             this.Controls.Add(this.AzuriraniNazivAutobusneStanice);
@@ -109,7 +143,7 @@
             this.Controls.Add(this.GumbOdustani);
             this.Controls.Add(this.GumbZaAzuriranje);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "AzurirajStanicu";
+            this.Name = "LabelID";
             this.Text = "Azuriranje autobusne stanice";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -124,5 +158,8 @@
         private System.Windows.Forms.Button GumbOdustani;
         private System.Windows.Forms.Button GumbZaAzuriranje;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label LabelLokacija;
+        private System.Windows.Forms.Label LabelNaziv;
+        private System.Windows.Forms.Label label1;
     }
 }

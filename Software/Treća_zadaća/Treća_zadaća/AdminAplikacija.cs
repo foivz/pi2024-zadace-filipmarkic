@@ -84,7 +84,7 @@ namespace Treća_zadaća
 
         private void GumbZaUpdate_Click(object sender, EventArgs e)
         {
-            AzurirajStanicu azurirajAutobusnuStanicu = new AzurirajStanicu();
+            LabelID azurirajAutobusnuStanicu = new LabelID();
             azurirajAutobusnuStanicu.Show();
         }
 
