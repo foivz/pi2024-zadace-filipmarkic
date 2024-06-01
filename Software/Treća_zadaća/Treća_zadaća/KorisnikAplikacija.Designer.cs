@@ -45,9 +45,10 @@
             // 
             this.AutobusneStaniceLabel.AutoSize = true;
             this.AutobusneStaniceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.AutobusneStaniceLabel.Location = new System.Drawing.Point(346, 29);
+            this.AutobusneStaniceLabel.Location = new System.Drawing.Point(461, 36);
+            this.AutobusneStaniceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AutobusneStaniceLabel.Name = "AutobusneStaniceLabel";
-            this.AutobusneStaniceLabel.Size = new System.Drawing.Size(195, 25);
+            this.AutobusneStaniceLabel.Size = new System.Drawing.Size(243, 29);
             this.AutobusneStaniceLabel.TabIndex = 1;
             this.AutobusneStaniceLabel.Text = "Autobusne Stanice";
             // 
@@ -60,11 +61,13 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(157, 161);
+            this.dataGridView1.Location = new System.Drawing.Point(209, 198);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(549, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(732, 303);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -72,17 +75,19 @@
             // 
             this.AutobusniPulsLabel.AutoSize = true;
             this.AutobusniPulsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.AutobusniPulsLabel.Location = new System.Drawing.Point(11, 96);
+            this.AutobusniPulsLabel.Location = new System.Drawing.Point(15, 118);
+            this.AutobusniPulsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AutobusniPulsLabel.Name = "AutobusniPulsLabel";
-            this.AutobusniPulsLabel.Size = new System.Drawing.Size(87, 13);
+            this.AutobusniPulsLabel.Size = new System.Drawing.Size(111, 17);
             this.AutobusniPulsLabel.TabIndex = 13;
             this.AutobusniPulsLabel.Text = "AutobusniPuls";
             // 
             // GumbZaOdjavu
             // 
-            this.GumbZaOdjavu.Location = new System.Drawing.Point(14, 412);
+            this.GumbZaOdjavu.Location = new System.Drawing.Point(19, 507);
+            this.GumbZaOdjavu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GumbZaOdjavu.Name = "GumbZaOdjavu";
-            this.GumbZaOdjavu.Size = new System.Drawing.Size(75, 23);
+            this.GumbZaOdjavu.Size = new System.Drawing.Size(100, 28);
             this.GumbZaOdjavu.TabIndex = 9;
             this.GumbZaOdjavu.Text = "Odjava";
             this.GumbZaOdjavu.UseVisualStyleBackColor = true;
@@ -91,17 +96,20 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 22);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 92);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // GumbZaPretragu
             // 
-            this.GumbZaPretragu.Location = new System.Drawing.Point(393, 122);
+            this.GumbZaPretragu.Location = new System.Drawing.Point(524, 150);
+            this.GumbZaPretragu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GumbZaPretragu.Name = "GumbZaPretragu";
-            this.GumbZaPretragu.Size = new System.Drawing.Size(105, 23);
+            this.GumbZaPretragu.Size = new System.Drawing.Size(140, 28);
             this.GumbZaPretragu.TabIndex = 17;
             this.GumbZaPretragu.Text = "Pretraži";
             this.GumbZaPretragu.UseVisualStyleBackColor = true;
@@ -109,26 +117,28 @@
             // 
             // AutobusnaStanicaTrazi
             // 
-            this.AutobusnaStanicaTrazi.Location = new System.Drawing.Point(369, 96);
+            this.AutobusnaStanicaTrazi.Location = new System.Drawing.Point(492, 118);
+            this.AutobusnaStanicaTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AutobusnaStanicaTrazi.Name = "AutobusnaStanicaTrazi";
-            this.AutobusnaStanicaTrazi.Size = new System.Drawing.Size(159, 20);
+            this.AutobusnaStanicaTrazi.Size = new System.Drawing.Size(211, 22);
             this.AutobusnaStanicaTrazi.TabIndex = 21;
             // 
             // PretraziLabel
             // 
             this.PretraziLabel.AutoSize = true;
             this.PretraziLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.PretraziLabel.Location = new System.Drawing.Point(419, 78);
+            this.PretraziLabel.Location = new System.Drawing.Point(541, 96);
+            this.PretraziLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PretraziLabel.Name = "PretraziLabel";
-            this.PretraziLabel.Size = new System.Drawing.Size(56, 15);
+            this.PretraziLabel.Size = new System.Drawing.Size(105, 18);
             this.PretraziLabel.TabIndex = 20;
-            this.PretraziLabel.Text = "Lokacija:";
+            this.PretraziLabel.Text = "Lokacija/naziv:";
             // 
             // KorisnikAplikacija
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.AutobusnaStanicaTrazi);
             this.Controls.Add(this.PretraziLabel);
             this.Controls.Add(this.GumbZaPretragu);
@@ -137,6 +147,7 @@
             this.Controls.Add(this.GumbZaOdjavu);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AutobusneStaniceLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "KorisnikAplikacija";
             this.Text = "AutobusniPuls (Korisnik)";
             this.Load += new System.EventHandler(this.KorisnikAplikacija_Load);

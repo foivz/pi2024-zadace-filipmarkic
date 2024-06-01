@@ -60,16 +60,16 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(29, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(102, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 92);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // GumbZaOdjavu
             // 
             this.GumbZaOdjavu.Location = new System.Drawing.Point(29, 500);
-            this.GumbZaOdjavu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaOdjavu.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaOdjavu.Name = "GumbZaOdjavu";
             this.GumbZaOdjavu.Size = new System.Drawing.Size(100, 28);
             this.GumbZaOdjavu.TabIndex = 2;
@@ -80,7 +80,7 @@
             // GumbZaUpdate
             // 
             this.GumbZaUpdate.Location = new System.Drawing.Point(389, 176);
-            this.GumbZaUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaUpdate.Name = "GumbZaUpdate";
             this.GumbZaUpdate.Size = new System.Drawing.Size(100, 28);
             this.GumbZaUpdate.TabIndex = 3;
@@ -91,7 +91,7 @@
             // GumbZaDelete
             // 
             this.GumbZaDelete.Location = new System.Drawing.Point(699, 176);
-            this.GumbZaDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaDelete.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaDelete.Name = "GumbZaDelete";
             this.GumbZaDelete.Size = new System.Drawing.Size(100, 28);
             this.GumbZaDelete.TabIndex = 4;
@@ -102,7 +102,7 @@
             // GumbZaAdd
             // 
             this.GumbZaAdd.Location = new System.Drawing.Point(541, 176);
-            this.GumbZaAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaAdd.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaAdd.Name = "GumbZaAdd";
             this.GumbZaAdd.Size = new System.Drawing.Size(100, 28);
             this.GumbZaAdd.TabIndex = 5;
@@ -129,7 +129,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(227, 225);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -141,7 +141,7 @@
             // GumbZaPretragu
             // 
             this.GumbZaPretragu.Location = new System.Drawing.Point(524, 134);
-            this.GumbZaPretragu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaPretragu.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaPretragu.Name = "GumbZaPretragu";
             this.GumbZaPretragu.Size = new System.Drawing.Size(140, 28);
             this.GumbZaPretragu.TabIndex = 20;
@@ -152,7 +152,7 @@
             // AutobusnaStanicaTrazi
             // 
             this.AutobusnaStanicaTrazi.Location = new System.Drawing.Point(491, 102);
-            this.AutobusnaStanicaTrazi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AutobusnaStanicaTrazi.Margin = new System.Windows.Forms.Padding(4);
             this.AutobusnaStanicaTrazi.Name = "AutobusnaStanicaTrazi";
             this.AutobusnaStanicaTrazi.Size = new System.Drawing.Size(211, 22);
             this.AutobusnaStanicaTrazi.TabIndex = 19;
@@ -173,7 +173,7 @@
             // GumbZaUpdatePrikazaTablice
             // 
             this.GumbZaUpdatePrikazaTablice.Location = new System.Drawing.Point(485, 550);
-            this.GumbZaUpdatePrikazaTablice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GumbZaUpdatePrikazaTablice.Margin = new System.Windows.Forms.Padding(4);
             this.GumbZaUpdatePrikazaTablice.Name = "GumbZaUpdatePrikazaTablice";
             this.GumbZaUpdatePrikazaTablice.Size = new System.Drawing.Size(217, 42);
             this.GumbZaUpdatePrikazaTablice.TabIndex = 21;
@@ -198,7 +198,7 @@
             this.Controls.Add(this.GumbZaOdjavu);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AutobusneStaniceLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminAplikacija";
             this.Text = "AutobusniPuls (Admin)";
             this.Load += new System.EventHandler(this.AdminAplikacija_Load);
