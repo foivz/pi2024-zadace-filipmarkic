@@ -40,13 +40,21 @@ namespace Treća_zadaća
         private void GumbZaAzuriranje_Click(object sender, EventArgs e)
         {
             List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
-            bool postojiIDStanice = autobusneStanice.Exists(stanica => stanica.ID == int.Parse(IDAutobusneStanice.Text));
+            bool postojiIDStanice = autobusneStanice.Exists(stanica => stanica.ID == int.Parse(comboBox1.Text));
             bool postojiNovaLokacija = autobusneStanice.Exists(stanica => stanica.Lokacija == AzuriranaLokacijaAutobusneStanice.Text);
+            AutobusnaStanica novaAutobusnaStanica = autobusneStanice.Find(stanica => stanica.ID == int.Parse(comboBox1.Text));
+            int IDOdabraneStanice = novaAutobusnaStanica.ID;
+
+            if (string.IsNullOrEmpty(AzuriraniNazivAutobusneStanice.Text) || string.IsNullOrEmpty(AzuriranaLokacijaAutobusneStanice.Text) || AzuriraniNazivAutobusneStanice.Text == "Naziv" || AzuriranaLokacijaAutobusneStanice.Text == "Lokacija")
+            {
+                MessageBox.Show("Niste unijeli sve podatke", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (postojiIDStanice)
             {
-                if (!postojiNovaLokacija)
+                if (!postojiNovaLokacija && int.Parse(comboBox1.Text) == IDOdabraneStanice)
                 {
-                    RepozitorijAutobusnihStanica.AzurirajAutobusnuStanicu(int.Parse(IDAutobusneStanice.Text), AzuriraniNazivAutobusneStanice.Text, AzuriranaLokacijaAutobusneStanice.Text);
+                    RepozitorijAutobusnihStanica.AzurirajAutobusnuStanicu(int.Parse(comboBox1.Text), AzuriraniNazivAutobusneStanice.Text, AzuriranaLokacijaAutobusneStanice.Text);
                     MessageBox.Show("Podaci autobusne stanice uspješno ažurirani", "Obavijest", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();
                 }
@@ -63,6 +71,23 @@ namespace Treća_zadaća
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
+            AutobusnaStanica odabranaStanica = autobusneStanice.Find(stanica => stanica.ID.ToString() == comboBox1.Text);
+            if (comboBox1.SelectedIndex == 0)
+            {
+                AzuriraniNazivAutobusneStanice.Text = "Naziv";
+                AzuriranaLokacijaAutobusneStanice.Text = "Lokacija";
+            } 
+            else
+            {
+                AzuriraniNazivAutobusneStanice.Text = odabranaStanica.Naziv;
+                AzuriranaLokacijaAutobusneStanice.Text = odabranaStanica.Lokacija;
+            }
+
+        }
+
+        private void AzuriranaLokacijaAutobusneStanice_TextChanged(object sender, EventArgs e)
         {
 
         }
