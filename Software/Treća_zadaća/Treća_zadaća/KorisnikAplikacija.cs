@@ -22,10 +22,20 @@ namespace Treća_zadaća
         private void GumbZaPretragu_Click(object sender, EventArgs e)
         {
             List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
-            bool postojiTrazenaStanica = autobusneStanice.Exists(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text);
-            if (postojiTrazenaStanica)
+            bool postojiTrazenaLokacija = autobusneStanice.Exists(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text);
+            bool postojiTrazenaStanica = autobusneStanice.Exists(stanica => stanica.Naziv == AutobusnaStanicaTrazi.Text);
+            if (AutobusnaStanicaTrazi.Text == "")
+            {
+                MessageBox.Show("Unesite naziv ili lokaciju autobusne stanice", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PrikaziAutobusneStanice();
+            }
+            else if (postojiTrazenaLokacija)
             {
                 dataGridView1.DataSource = autobusneStanice.Where(stanica => stanica.Lokacija == AutobusnaStanicaTrazi.Text).ToList();
+            }
+            else if (postojiTrazenaStanica)
+            {
+                dataGridView1.DataSource = autobusneStanice.Where(stanica => stanica.Naziv == AutobusnaStanicaTrazi.Text).ToList();
             }
             else
             {
