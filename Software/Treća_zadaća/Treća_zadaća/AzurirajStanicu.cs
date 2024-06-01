@@ -17,6 +17,14 @@ namespace Treća_zadaća
         public AzurirajStanicu()
         {
             InitializeComponent();
+            List<AutobusnaStanica> autobusneStanice = RepozitorijAutobusnihStanica.DohvatiAutobusneStanice();
+            var IDAutobusnihStanica = autobusneStanice.Select(stanica => stanica.ID).ToList();
+            comboBox1.Items.Add("Odaberite ID");
+            comboBox1.Items[0] = "Odaberite ID";
+            comboBox1.SelectedItem = comboBox1.Items[0];//defaultno odabrana prva lokacija
+            for (int i = 0; i < IDAutobusnihStanica.Count; i++){
+                comboBox1.Items.Add(IDAutobusnihStanica[i]);
+            }
         }
 
         private void GumbOdustani_Click(object sender, EventArgs e)
@@ -52,6 +60,11 @@ namespace Treća_zadaća
             {
                 MessageBox.Show("Nema postoji stanica s takvim ID", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
